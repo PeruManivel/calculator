@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>calculator</title>
+    <link rel="stylesheet" href="styles/calc-style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	 <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+    <script src="js/calc-script.js"></script>
+
+	<script>
+			$().ready(function(){
+				calc.showCalc();
+			});
+	</script>
+  </head>
+  <body>
+    <!-- page content -->
+    <section> 	
+		<div id='calcSection'></div> 
+	</section>  
+    <footer></footer>
+
+  </body>
+
+<!-- all templates goes here -->
+<script id="calcTemplate" type="text/x-jquery-tmpl">
+   <div>
+	<div id="calculator">
+	<!-- Screen and clear key -->
+	<div class="top">
+		<span class="clear">C</span>
+		<div class="screen"></div>
+	</div>
+	
+	<div class="keys">
+		<!-- operators and other keys -->
+		<span>1</span>
+		<span>2</span>
+		<span>3</span>
+		<span class="operator">+</span>
+		<span>4</span>
+		<span>5</span>
+		<span>6</span>
+		<span class="operator">-</span>
+		<span>7</span>
+		<span>8</span>
+		<span>9</span>
+		<span class="operator">/</span>
+		<span>0</span>
+		<span>.</span>
+		<span class="eval">=</span>
+		<span class="operator">*</span>
+	</div>
+</div>
+
+</div>
+</script>
+
+
+ 
+</html>
